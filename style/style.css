@@ -1,0 +1,17 @@
+html {
+  width: 90%;
+  height: 90%;
+}
+body {
+  background-color: #101010;
+}
+label {
+  color: white;
+  font-size: 2rem;
+  position: relative;
+  display: block;
+  margin: 2vh;
+}
+canvas {
+  
+}

@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', () => { // When webpage content ha
 });
 
 function correctSize() { // Correction of aspect ratio
-  console.log(doc.clientHeight);
   if (doc.clientWidth > doc.clientHeight) { // If the client's viewport is wider than it is tall...
     displayOut.style.width = "auto"; // Width becomes relative (1:1)
     displayOut.style.height = "90vh"; // Heght becomes 50 viewport-heights

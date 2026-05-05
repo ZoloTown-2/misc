@@ -5,14 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Space Invaders HTML5</title>
   <script src="script/aspect-ratio.js"></script>
+  <link rel="stylesheet" href="style/style.css" />
   <style>
-    html {
-      width: 90%;
-      height: 90%;
-    }
-    body {
-      background-color: #101010;
-    }
     div#display-out {
       position: absolute;
       aspect-ratio: 8 / 7;
@@ -20,6 +14,9 @@
       left: 50%;
       transform: translate(-50%, -50%);
       border: 1px solid white;
+    }
+    div#game-container {
+      display: inline-block;
     }
     div#stats {
       float: right;
@@ -29,21 +26,14 @@
       border-width: 0 0 0 1px;
     }
     div#stocks, div#level {
-      margin-bottom: 12vh;
-    }
-    label {
-      color: white;
-      font-size: 2vw;
-      position: relative;
-      display: block;
-      margin: 2vh;
+      margin-bottom: 10vh;
     }
     label#score-header, label#high-score-header {
       text-align: left;
     }
     label#score-value, label#high-score-value {
       text-align: right;
-      margin-bottom: 12vh;
+      margin-bottom: 10vh;
     }
     div#stock-images, div#level-images, label#stock-count {
       display: inline;
@@ -52,6 +42,9 @@
 </head>
 <body>
   <div id="display-out">
+    <div id="game-container">
+      <canvas id="game"></canvas>
+    </div>
     <div id="stats">
       <label id="score-header">Score</label>
       <label id="score-value">000000</label>
