@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Space Invaders HTML5</title>
-  <script src="script/aspect-ratio.js"></script>
+  <script src="script/aspect-ratio.js"></script> <!-- Apply aspect-ratio fixer -->
+  <script src="script/entities.js"></script> <!-- Define entity classes -->
+  <script src="script/game.js"></script> <!-- Call main game -->
   <link rel="stylesheet" href="style/style.css" />
   <style>
     div#display-out {
@@ -13,17 +15,20 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      border: 1px solid white;
+      border: 3px solid white;
     }
-    div#game-container {
+    div#game {
       display: inline-block;
+      width: 60%; /* To make space for screen size changes */
+      height: 100%;
+      transform: translateX(4.3%);
     }
     div#stats {
       float: right;
       width: 35%;
       height: 100%;
-      border: 1px solid white;
-      border-width: 0 0 0 1px;
+      border: 3px solid white;
+      border-width: 0 0 0 3px;
     }
     div#stocks, div#level {
       margin-bottom: 10vh;
@@ -42,9 +47,7 @@
 </head>
 <body>
   <div id="display-out">
-    <div id="game-container">
-      <canvas id="game"></canvas>
-    </div>
+    <div id="game"></div>
     <div id="stats">
       <label id="score-header">Score</label>
       <label id="score-value">000000</label>

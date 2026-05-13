@@ -1,0 +1,5 @@
+All sounds are taken from my former Java project, also being a remake of Space Invaders.
+
+All sounds originate from Space Invaders.
+
+I am missing the UFO sounds and the extend sound, but I'll live.

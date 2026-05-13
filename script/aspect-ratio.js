@@ -1,3 +1,9 @@
+/* 
+  This package is for maintaing a proper aspect ratio for all
+  screen sizes. It's not a perfect system, but it's the best I
+  can do for now.
+*/
+
 // Initializers
 let displayOut;
 let stats;

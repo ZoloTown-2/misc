@@ -1,0 +1,7 @@
+All images are taken from my former Java project, also being a remake of Space Invaders.
+
+All images originate from Space Invaders, except:
+
+- ShelterWound.png
+- ShotCollision.png (previous but white)
+- ShipExplosion2.png (originates from the game, but this is not directly accessible online, so it was remade manually by observing gameplay recordings)
